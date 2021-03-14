@@ -67,9 +67,7 @@ String.prototype.extract = function(prefix, secondPrefix, suffix, secondSuffix) 
                 Object.assign(item, paramObj)
             })
 
-            console.log('page ---> ', page)
             await saveData(page, carsItems);
-            //console.log(carsItems);
         }
   } catch (e){
       console.log(chalk.red(`Error has occured`));
